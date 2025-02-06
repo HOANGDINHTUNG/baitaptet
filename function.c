@@ -219,9 +219,9 @@ void inputInfoClass(Class *infor,int *i,int index,int mode) {
                 if(!checkIdClass(infor[j].id)){
                     printf("Nhap ma lop khong dung dinh dang!!!\n");
                 }
-//                else if(checkIdExistClass(infor[j].id,numClass,cla1)){
-//                    printf("Ma so lop da ton tai, vui long nhap lai!!\n");
-//                }
+                else if(checkIdExistClass(infor[j].id,numClass,cla1)){
+                    printf("Ma so lop da ton tai, vui long nhap lai!!\n");
+                }
                 else{
                     printf("Nhap ma lop thanh cong!!!\n");
                     break;
@@ -504,9 +504,9 @@ void inputInfoStudent(Student *infor,int *i,int index,int mode){
                 if(!checkIdStudent(infor[j].id)){
                     printf("Ma SV khong dung, vui long nhap lai!!\n");
                 }
-//                else if(checkIdExistStudent(infor[j].id,numStudent,stu)){
-//                    printf("Ma sinh vien da ton tai, vui long nhap lai!!!\n");
-//                }
+                else if(checkIdExistStudent(infor[j].id,numStudent,stu)){
+                    printf("Ma sinh vien da ton tai, vui long nhap lai!!!\n");
+                }
                 else{
                     printf("ma sinh vien hop le!!!\n");
                     break;

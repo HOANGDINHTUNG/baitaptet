@@ -75,34 +75,34 @@ int checkEmailStudent(char *Email){
     return 1;
 }
 
-//// Hàm kiểm tra xem mã SV có tồn tại hay chưa
-//int checkIdExistStudent(char *Id,int number,Student *stu){
-//    for(int i=0;i<number;i++){
-//        printf("Id : %s\n",stu[i].name);
-//        if(strcmp(Id,stu[i].id)==0){
-//            return 1;
-//            // Mã số SV tồn tại
-//        }
-//    }
-//    return 0;
-//    // Mã số SV không tồn tại
-//}
+// Hàm kiểm tra xem mã SV có tồn tại hay chưa
+int checkIdExistStudent(char *Id,int number,Student *stu){
+    for(int i=0;i<number;i++){
+        printf("Id : %s\n",stu[i].name);
+        if(strcmp(Id,stu[i].id)==0){
+            return 1;
+            // Mã số SV tồn tại
+        }
+    }
+    return 0;
+    // Mã số SV không tồn tại
+}
 
 // Hàm kiểm tra xem mã lớp có tồn tại hay chưa
-//int checkIdExistClass(char Id[6],int number,Class *cla1){
-//
-//    for(int k=0;k<number;k++){
-//        printf("ma Sv %s\n",cla1[k].id);
-//    }
-//    for(int i=0;i<number;i++){
-//        if(strcmp(Id,cla1[i].id)==0){
-//            return 1;
-//            // Mã số lớp tồn tại
-//        }
-//    }
-//    return 0;
-//    // Mã số lớp không tồn tại
-//}
+int checkIdExistClass(char Id[6],int number,Class *cla1){
+
+    for(int k=0;k<number;k++){
+        printf("ma Sv %s\n",cla1[k].id);
+    }
+    for(int i=0;i<number;i++){
+        if(strcmp(Id,cla1[i].id)==0){
+            return 1;
+            // Mã số lớp tồn tại
+        }
+    }
+    return 0;
+    // Mã số lớp không tồn tại
+}
 
 // Hàm kiểm tra ngày sinh có hợp lệ hay không
 int checkBirthdayValid(const char *birthday){
